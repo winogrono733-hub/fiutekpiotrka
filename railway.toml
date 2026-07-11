@@ -1,0 +1,10 @@
+[build]
+builder = "NIXPACKS"
+
+[[services]]
+source = "."
+healthcheck_path = "/health"
+
+[[services.volumes]]
+name = "data"
+mount_path = "/data"
